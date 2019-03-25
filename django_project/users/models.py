@@ -19,7 +19,7 @@ class Profile(models.Model):
 	PROBLEM SOLVED -> images stored on drive will be smaller and website will load faster.
 	"""
 
-	#TODO: Delete old images after updating to new
+	#TODO: Delete old images after updating
 	def save(self):
 		super().save()
 
