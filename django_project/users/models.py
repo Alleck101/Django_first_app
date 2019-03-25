@@ -20,8 +20,8 @@ class Profile(models.Model):
 	"""
 
 	#TODO: Delete old images after updating
-	def save(self):
-		super().save()
+	def save(self, *args, **kwargs):
+		super().save(*args, **kwargs)
 
 		img = Image.open(self.image.path)
 
